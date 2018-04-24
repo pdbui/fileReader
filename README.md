@@ -6,5 +6,5 @@ The computer will pick a random group from the list and hide the name with under
 The user will guess the group name one letter/number at a time.
 The user will have 10 tries total before they lose the game.
 
-You may add or remove names to the "text.txt" document.
+You can change the "text.txt" document with whatever words you want.
 Do not include spaces in between words and only have one name per line.
