@@ -92,7 +92,7 @@ class Game
             userGuess = Character.toUpperCase(userInput);
 
             containLetterUpdate(userGuess);
-            System.out.print("Remaining tries: " + lives + ", Wrong guesses: ");
+            System.out.print("Remaining tries: " + lives + ", Wrong letters: ");
             printWrongLetter();
 
             isMatch = wordMatch();
@@ -144,7 +144,7 @@ class Game
 
             //Converting char to String to add to arraylist wrongletter
             String temp = Character.toString(userGuess);
-            if (!wrongLetter.contains(temp))
+            if (!wrongLetter.contains(temp) && new String(hiddenName).indexOf(userGuess) == -1)
             {
                 wrongLetter.add(temp);
             }
